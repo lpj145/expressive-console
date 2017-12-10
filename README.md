@@ -24,7 +24,7 @@ class MigrationCommand extende ExpressiveConsole\BaseCommand
 ]
 ```
 
-When install or require package service manage try to config it. if not can, add this array to configuration file providers:
+When install package service manage try to config it. if not can, add this array to configuration file providers:
 ```
 ExpressiveConsole\ConfigProvider
 ```
