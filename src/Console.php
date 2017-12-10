@@ -19,7 +19,6 @@ class Console implements CommandLoaderInterface
     {
         $this->container = $container;
         $this->commands = $container->get('config')['commands'] ?? [];
-        $this->registerConfigExposeCommand();
     }
 
     public function get($name)
@@ -35,11 +34,6 @@ class Console implements CommandLoaderInterface
     public function getNames()
     {
         return array_keys($this->commands);
-    }
-
-    private function registerConfigExposeCommand()
-    {
-        $this->commands['config'] = ExposeCommand::class;
     }
 
 }
