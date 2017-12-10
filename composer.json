@@ -1,0 +1,27 @@
+{
+  "name": "marcosadantas/expressive-console",
+  "description": "This libs provides baseCommand for commands, command loader for symfony and service provider for zend service manager",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Marcos Dantas",
+      "email": "marcos.adantas@hotmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "ExpressiveConsole\\": "src/"
+    }
+  },
+  "extras": {
+    "zf": {
+      "ConfigProvider": "ExpressiveConsole\\ConfigProvider"
+    }
+  },
+  "require": {
+    "symfony/console": "^4.0",
+    "psr/container": "^1.0"
+  }
+}
