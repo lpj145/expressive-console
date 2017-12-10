@@ -17,7 +17,7 @@ class ConfigProvider
                 ]
             ],
             'commands' => [
-                'config:show' => 'Expose all configuration from service manager'
+                'config:show' => ExposeCommands::class
             ]
         ];
     }

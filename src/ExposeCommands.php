@@ -9,7 +9,7 @@ class ExposeCommands extends BaseCommand
     protected function description()
     {
         $this
-            ->setDescription('Expose all configurations on container');
+            ->setDescription('Expose all configuration from service manager');
     }
 
     protected function process(InputInterface $input, OutputInterface $output)
